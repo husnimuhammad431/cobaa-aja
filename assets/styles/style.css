@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h2, h3 {
+    color: #131010;
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    background-color: #543a13;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #131010;
+    padding: 4px;
+}
+
+nav a:hover {
+    color: white;
+    padding: 4px ;
+    border-radius: 2px;
+    background-color: #543a13;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 250px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.jumbotron{
+    font-size: 20px;
+    padding: 30px;
+    background-color: #fff0dc;
+    text-align: center;
+    color: #131010;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #f0bb78;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+main article {
+    text-align: justify;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
